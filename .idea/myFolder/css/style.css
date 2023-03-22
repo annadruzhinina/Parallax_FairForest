@@ -5,6 +5,8 @@
 }
 
 :root {
+  /* size calculation based on screen size */
+  --index: calc(1vw+1vh);
   @front-face {
     font-family: raleway_f;
     src: url(../fonts/raleway-regular.woff2);
@@ -19,7 +21,7 @@
 body {
   background-color: #010101;
   color: white;
-  font-family: railway-f, sans-serif;
+  font-family: railway-f sans-serif;
   line-height: 1.55;
 }
 
@@ -63,11 +65,17 @@ body {
   z-index: 2;
 }
 
-.layer-header {
-  z-index: 1;
+.layers__header {
   transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+  will-change: transform;
+  font-weight: 900;
+  z-index: 1;
+  text-transform: uppercase;
 }
 
+.layers__title {
+  font-size: calc(var(--index) * 2.5);
+}
 .main-articl {
   min-height: 100vh;
 }
