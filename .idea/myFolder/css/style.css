@@ -44,3 +44,11 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.layers_base {
+  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+}
+
+.main-articl {
+  min-height: 100vh;
+}
