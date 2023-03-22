@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Document</title>
-    <link rel="stylesheet" href="./style/main.css">
-</head>
-<body>
-
-</body>
+    <link rel="stylesheet" href="./style/main.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="layers">
+        <div class="layers__header">
+          <div class="layers__caption">Welcome to Parallax</div>
+          <div class="layers__title">Fairy Forest</div>
+        </div>
+        <div
+          class="layer layers_base"
+          style="background-image: url(img/layer-base.png)"
+        ></div>
+        <div
+          class="layer layers_title"
+          style="background-image: url(img/layer-middle.png)"
+        ></div>
+        <div
+          class="layer layers_front"
+          style="background-image: url(img/layer-front.png)"
+        ></div>
+      </div>
+    </header>
+    <article class="main-articl" style="background-image: url(img/dungeon.jpg)">
+      <div class="main-article__content">
+        <h2 class="main-article__header">To be continued</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
+          laborum aperiam quae porro aliquid iusto, beatae repellat
+          reprehenderit hic consequuntur vel voluptatibus voluptatum doloribus,
+          minima quas totam, quaerat similique sint. Reprehenderit nesciunt
+          repellat atque qui labore rem nihil odit facere officia molestiae
+          blanditiis, maiores minima perspiciatis tenetur alias totam.
+          Exercitationem.
+        </p>
+        <div class="copy">© AnnaDruzhinina</div>
+      </div>
+    </article>
+  </body>
 </html>
