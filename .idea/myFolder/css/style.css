@@ -24,6 +24,7 @@ body {
 }
 
 .main-header {
+  /* don't affect us */
   position: relative;
 }
 
@@ -40,4 +41,6 @@ body {
   width: 100%;
   /* stretch img */
   position: absolute;
+  background-size: cover;
+  background-position: center;
 }
