@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,26 +10,36 @@
   /* size calculation based on screen size */
   --index: calc(1vw+1vh);
   @front-face {
-    font-family: raleway_f;
-    src: url(../fonts/raleway-regular.woff2);
+    font-family: "Raleway", sans-serif;
   }
   @front-face {
-    font-family: raleway_f;
-    src: url(../fonts/raleway-black.woff2);
+    font-family: "Raleway", sans-serif;
     font-weight: 900;
   }
 }
 
 body {
   background-color: #010101;
-  color: white;
-  font-family: railway-f sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
   line-height: 1.55;
 }
 
 .main-header {
   /* don't affect us */
   position: relative;
+}
+.main-header::after {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/ground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: -100px;
+  background-position: center;
 }
 
 .layers {
@@ -71,11 +83,22 @@ body {
   font-weight: 900;
   z-index: 1;
   text-transform: uppercase;
+  color: #e7e6d3;
 }
 
 .layers__title {
-  font-size: calc(var(--index) * 2.5);
+  font-weight: 900;
+  font-size: calc(var(--index) * 3.5);
+  letter-spacing: calc(var(--index) / 2.25);
 }
+.layers__caption {
+  font-weight: 900;
+  font-size: calc(var(--index) / 1.175);
+  letter-spacing: calc(var(--index) / 2);
+  /* margin-top: calc(var(--index) * -0.75); */
+  text-shadow: 0 0 15px #9e7d35;
+}
+
 .main-articl {
   min-height: 100vh;
 }
